@@ -9,12 +9,12 @@ pub struct ClientInfo {
     pub user: String,
     pub name: Option<String>,
     pub tags: Option<Vec<String>>,
-    pub name_tag: String,
+    pub name_tag: Option<String>,
     pub kind: String,
     #[serde(rename = "type")]
     pub client_type: String,
     pub mqtt: Option<String>,
-    pub nonce: String,
+    pub nonce: Option<String>,
 }
 
 #[derive(Debug, Serialize, Deserialize, Default, Clone)]
